@@ -19,10 +19,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+h1, h2, h3, h4, p {
+  margin: 0; }
+
 h1 {
   font-size: 3.438rem; }
 
 p {
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6); }
+
+.thank-you {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh; }
+  .thank-you__content {
+    position: absolute;
+    pointer-events: none; }
+  .thank-you__title {
+    margin-bottom: 1rem;
+    text-align: center; }
+  .thank-you__description {
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
