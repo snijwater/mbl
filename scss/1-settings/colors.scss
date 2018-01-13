@@ -1,0 +1,16 @@
+@function color($color-name, $color-variant) {
+  @return map-get(map-get($colors, $color-name), $color-variant);
+}
+
+$colors: (
+  // nested map inception
+  primary: (
+    base: #221E27,
+    white: #ffffff,
+    highlight: #BCAE8C,
+  ),
+  // and another. is the totem still spinning?
+  secondary: (
+    base: #0969A2,
+  )
+);
