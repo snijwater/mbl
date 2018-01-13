@@ -6,9 +6,12 @@
 
     height: 100vh;
 
+    cursor: pointer;
+
     &__content {
         position: absolute;
         pointer-events: none;
+        user-select: none;
     }
 
     &__title {
@@ -19,5 +22,9 @@
 
     &__description {
         text-align: center;
+    }
+
+    &__continue {
+        pointer-events: all;
     }
 }
