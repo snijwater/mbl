@@ -1,0 +1,57 @@
+.slider {
+    width: 400px;
+    height: 600px;
+
+    &__list {
+        position: absolute;
+
+        width: inherit;
+        height: inherit;
+        overflow: hidden;
+
+        &__item {
+            position: absolute;
+
+            width: inherit;
+            height: inherit;
+
+            transform: translateX(100%);
+
+            &.is-current {
+                transform: translateX(0);
+            }
+
+            &__image {
+                width: inherit;
+                height: inherit;
+            }
+        }
+    }
+
+    &__previews {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+
+        width: 200px;
+        height: 300px;
+        overflow: hidden;
+
+        cursor: pointer;
+        transform: translate(60%, -5%);
+
+        &__item {
+            position: absolute;
+
+            transform: translateX(100%);
+
+            &.is-current {
+                transform: translateX(0);
+            }
+
+            &__image {
+                transform: translateX(0);
+            }
+        }
+    }
+}

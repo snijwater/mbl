@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+ul,
+li{
+    list-style: none;
+}
