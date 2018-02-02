@@ -1,0 +1,16 @@
+.hero {
+    text-align: center;
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        color: color(primary, white);
+    }
+
+    &__link {
+        display: inline-block;
+        margin-top: 4rem;
+    }
+}

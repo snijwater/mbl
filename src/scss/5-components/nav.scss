@@ -1,0 +1,46 @@
+.nav {
+    &__item {
+        display: inline-block;
+
+        margin: 0 1.5rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+
+            padding-top: 5px;
+
+            border-bottom: 1px solid color(primary, highlight);
+
+            transform: scaleX(0);
+            transition: transform .3s cubic-bezier(.19,1,.22,1);
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
+
+        &__link {
+            color: color(primary, white);
+
+            font-weight: bold;
+            font-size: 0.75rem;
+            line-height: 2rem;
+            letter-spacing: 2px;
+
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &--active {
+
+            }
+        }
+    }
+
+    &--black {
+
+    }
+}

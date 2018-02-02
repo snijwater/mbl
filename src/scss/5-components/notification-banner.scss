@@ -1,0 +1,18 @@
+.notification-banner {
+    position: fixed;
+    top: 0;
+
+    height: 28px;
+    width: 100%;
+
+    background-color: color(primary, highlight);
+
+
+
+    text-align: center;
+
+    &__text {
+        color: color(primary, white);
+        line-height: 28px;
+    }
+}
