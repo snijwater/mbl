@@ -7,12 +7,15 @@
 
 @import "4-elements/typography";
 
-@import "5-components/header";
-@import "5-components/hero";
-@import "5-components/nav";
-@import "5-components/notification-banner";
-@import "5-components/section";
-@import "5-components/slider";
-@import "5-components/thank-you";
+@import "5-objects/grid";
 
-@import "6-trumps/utilities";
+@import "6-components/header";
+@import "6-components/hero";
+@import "6-components/nav";
+@import "6-components/notification-banner";
+@import "6-components/section";
+@import "6-components/slider";
+@import "6-components/slideshow";
+@import "6-components/thank-you";
+
+@import "7-trumps/utilities";
