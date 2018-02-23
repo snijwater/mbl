@@ -8,6 +8,8 @@
     width: 100%;
 
     background-color: color(primary, highlight);
+    background-image: url('./../../images/gold-texture.jpg');
+    background-size: cover;
 
 
 
@@ -15,6 +17,7 @@
 
     &__text {
         color: color(primary, white);
+        font-size: 0.875rem;
         line-height: 28px;
     }
 }

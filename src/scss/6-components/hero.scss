@@ -7,10 +7,18 @@
 
     &__description {
         color: color(primary, white);
+        font-size: 1.125rem;
     }
 
     &__link {
         display: inline-block;
         margin-top: 4rem;
+
+        color: color(primary, white);
+
+        &::after {
+            transform: scaleX(.5);
+            transform-origin: center left;
+        }
     }
 }
