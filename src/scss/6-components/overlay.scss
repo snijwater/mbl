@@ -2,13 +2,21 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 95;
+
     width: 100vw;
     height: 100vh;
+
     background: rgba(0,0,0,.6);
     visibility: hidden;
+
     opacity: 0;
-    z-index: 95;
+
     transition: .6s opacity cubic-bezier(.165,.84,.44,1),.6s visibility;
+
+    cursor: url('./../../images/_icons/cursor-close.png') 20 20,pointer;
+     cursor: -webkit-image-set(url("./../../images/_icons/cursor-close.png") 1x, url("./../../images/_icons/cursor-close@2x.png") 2x) 0 0, pointer; /* Webkit */
+    pointer-events: auto;
 }
 
 body.cart-opened .overlay {

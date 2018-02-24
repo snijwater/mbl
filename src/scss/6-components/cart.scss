@@ -15,9 +15,29 @@
 
     transform: translateX(100%);
 
-    transition: .4s transform cubic-bezier(.165,.84,.44,1);
+    transition: .4s transform $easing-snappy;
 
     overflow: hidden;
+
+    &__close {
+        position: absolute;
+        z-index: 1;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    &__title {
+        margin-top: 2rem;
+    }
+
+    &__empty {
+        margin-top: 2rem;
+        &__link {
+            display: inline-block;
+            margin-top: 2rem;
+        }
+    }
+
 }
 
 body.cart-opened .cart {

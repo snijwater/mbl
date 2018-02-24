@@ -1,0 +1,35 @@
+.highlighted-products {
+    padding: 5rem 4rem;
+
+    background-color: color(primary, white);
+    color: color(text, dark-primary);
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 2rem;
+
+        &__line {
+            flex: 1;
+
+            height: 1px;
+            background-color: color(greyscales, primary);
+        }
+    }
+
+    &__products {
+         display: grid;
+         grid-column-gap: 1rem;
+         grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__title {
+        padding-right: 2rem;
+    }
+
+    &__link {
+        padding-left: 2rem;
+    }
+}

@@ -1,7 +1,16 @@
 .header {
+    position: fixed;
+    top: 1rem;
+    z-index: 997;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 0 4rem;
+
+    width: 100%;
+
 
     margin: 2rem 0;
 

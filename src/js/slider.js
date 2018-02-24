@@ -1,6 +1,6 @@
 'use strict';
 
-var initSlider = function() {
+const initSlider = function() {
     var slider = document.querySelector('.js-slider');
 
     if (!slider) {

@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2.5rem 4rem;
+
+    &__description {
+        width: 40%;
+
+        &__text {
+            color: color(text, white-secondary);
+        }
+    }
+
+    &__site-map {
+        display: flex;
+        justify-content: space-between;
+
+        width: 40%;
+    }
+
+    &__link-list {
+        width: 50%;
+    }
+}
