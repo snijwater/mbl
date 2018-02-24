@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <title>MBL Professional - Demo</title>
     <link rel="stylesheet" href="dist/css/main.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 <body>
+    <svg style="display: none;">
+        <symbol id="cart" viewbox="0 0 22 29">
+            <path
+                d="M21.098 7.798c.505 0 .902.395.902.898v17.968A2.335 2.335 0 0 1 19.656 29H2.344A2.335 2.335 0 0 1 0 26.664V8.696c0-.503.397-.898.902-.898h3.787V6.361C4.689 2.839 7.538 0 11 0c3.462 0 6.311 2.839 6.311 6.36v1.438h3.787zm-1.442 19.405a.554.554 0 0 0 .54-.539V9.594h-2.885v4.96a.891.891 0 0 1-.901.898.891.891 0 0 1-.902-.898v-4.96H6.492v4.96a.891.891 0 0 1-.902.898.891.891 0 0 1-.901-.898v-4.96H1.803v17.07c0 .288.253.54.541.54h17.312zm-3.95-19.24V6.324c0-2.627-2.109-4.764-4.708-4.764S6.29 3.698 6.29 6.325v1.637h9.416z"
+                fill-rule="nonzero"/>
+        </symbol>
+    </svg>
     <div class="notification-banner">
         <p class="notification-banner__text"><span class="bold-text">Gratis verzendingen</span> binnen Nederland.</p>
     </div>
     <header class="header">
-        <div class="header__logo">
+        <a href="index.html" class="header__logo">
             Logo
-        </div>
+        </a>
         <ul class="nav">
             <li class="nav__item" id="item_1">
                 <a href="#" class="nav__item__link nav__item__link--active">Producten</a>
@@ -24,9 +33,12 @@
                 <a href="#" class="nav__item__link">Contact</a>
             </li>
         </ul>
-        <div class="header__shopping-cart">
-            Cart
-        </div>
+        <a href="#" class="header__shopping-cart">
+            Winkelmand
+            <svg class="header__shopping-cart__cart-icon">
+                 <use xlink:href="#cart"></use>
+            </svg>
+        </a>
     </header>
 
     <section class="hero">
