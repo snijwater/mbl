@@ -33,7 +33,7 @@
                 <a href="#" class="nav__item__link">Contact</a>
             </li>
         </ul>
-        <a href="#" class="header__shopping-cart">
+        <a href="#" class="header__shopping-cart js-open-cart">
             Winkelmand
             <svg class="header__shopping-cart__cart-icon">
                  <use xlink:href="#cart"></use>
@@ -41,11 +41,19 @@
         </a>
     </header>
 
-    <section class="hero">
-        <h1 class="hero__title">Professionele make-up voor een eerlijke prijs</h1>
-        <p class="hero__description">In dignissim elementum eros sed aliquet. In viverra, velit eget condimentum bibendum, velit eros pellentesque.</p>
-        <a class="hero__link" href="#" data-title="Bekijk producten">Bekijk producten</a>
-    </section>
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">Professionele make-up <br />voor een eerlijke prijs</h1>
+            <p class="hero__description">In dignissim elementum eros sed aliquet. In viverra, velit <br />eget condimentum bibendum, velit eros pellentesque.</p>
+            <a class="hero__link" href="#" data-title="Bekijk producten">Bekijk producten</a>
+        </section>
+
+        <div class="cart">
+            <h2>Winkelmand</h2>
+        </div>
+        <div class="overlay"></div>
+    </main>
+
 
     <script src="dist/js/main.min.js" charset="utf-8"></script>
 </body>

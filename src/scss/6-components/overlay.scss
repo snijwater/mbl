@@ -1,0 +1,17 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.6);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 95;
+    transition: .6s opacity cubic-bezier(.165,.84,.44,1),.6s visibility;
+}
+
+body.cart-opened .overlay {
+    opacity: .8;
+    visibility: visible;
+}
