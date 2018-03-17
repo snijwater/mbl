@@ -1,6 +1,6 @@
 'use strict';
 
-const initCart = function() {
+export const initCart = function() {
 
     let cart = {}
     cart.openButton = document.querySelector('.js-open-cart');

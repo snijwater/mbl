@@ -1,6 +1,8 @@
 'use strict';
 
-const initSlider = function() {
+import { TweenLite } from 'gsap';
+
+export const initSlider = function() {
     var slider = document.querySelector('.js-slider');
 
     if (!slider) {

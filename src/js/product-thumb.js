@@ -1,6 +1,6 @@
 'use strict';
 
-const initProductThumb = function() {
+export const initProductThumb = function() {
     let productThumb = {};
 
     productThumb.item = document.querySelectorAll('.product-thumb');
